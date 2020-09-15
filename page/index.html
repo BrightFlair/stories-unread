@@ -1,0 +1,25 @@
+<main>
+	<section>
+		<header>
+			<h1>Stories Unread</h1>
+			<h2>A weekly newsletter curating interesting stories you probably haven't read yet.</h2>
+
+			<p>Since 2018, Stories Unread has applied machine learning to the curation of stories and links from within the technology, startup and programming world. Scores are applied depending on how stories are shared online over the course of a week, but anything that ranks too highly elsewhere online during that time period is disregarded.</p>
+			<p><strong>Each week, you will receive a fresh set of curated stories that will have been flying under the radar.</strong> <a href="#example">Check out the latest issue.</a></p>
+		</header>
+
+		<form method="post" onsubmit="this['do'].classList.add('submitting')">
+			<label>
+				<span>Your email address</span>
+				<input name="email" type="email" placeholder="e.g. {famousEmail}" required autofocus data-bind-attributes />
+			</label>
+
+			<button name="do" value="subscribe">Subscribe</button>
+		</form>
+	</section>
+
+	<aside id="example">
+		<h1>The latest issue #<span data-bind:text="issueNum">0</span> <span class="date" data-bind:text="issueDate">1st Jan 1970</span></h1>
+		<iframe src="/asset/preview/{issueNum}.html" data-bind-attributes></iframe>
+	</aside>
+</main>
